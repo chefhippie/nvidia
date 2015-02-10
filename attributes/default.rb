@@ -21,6 +21,7 @@ default["nvidia"]["packages"] = %w(
   x11-video-nvidiaG03
 )
 
+default["nvidia"]["zypper"]["enabled"] = true
 default["nvidia"]["zypper"]["alias"] = "nvidia-drivers"
 default["nvidia"]["zypper"]["title"] = "Nvidia Drivers"
 default["nvidia"]["zypper"]["repo"] = "ftp://download.nvidia.com/opensuse/#{node["platform_version"]}/"
