@@ -26,7 +26,7 @@ when "suse"
     key node["nvidia"]["zypper"]["key"]
     title node["nvidia"]["zypper"]["title"]
 
-    action :add
+    action [:add, :refresh]
 
     only_if do
       node["nvidia"]["zypper"]["enabled"]
