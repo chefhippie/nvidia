@@ -29,7 +29,7 @@ when "suse"
   when /\A42\.\d+\z/
     node["platform_version"]
   when /\A\d{8}\z/
-    "42.1"
+    "leap/42.1"
   else
     raise "Unsupported SUSE version"
   end
